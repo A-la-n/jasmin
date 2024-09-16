@@ -1,0 +1,38 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Pagina para Jasmin</title>
+    <link rel="icon" href="img/flowers.png" type="image/x-icon">
+    <link rel="stylesheet" href="css/style.css"/>
+</head>
+<body>
+    <div class="wrapper">
+        <h2 class="question">Hola Jasmin <br>Quiere un Regalo?</h2>
+        <img class="gif" alt="gif" src="https://media.giphy.com/media/bKyQb654tHDq72daXJ/giphy.gif"/>
+        <div class="btn-group">
+            <button class="yes-btn">Si</button>
+            <button class="no-btn">No</button>
+        </div>
+    </div>
+
+
+    <audio id="backgroundMusic" loop>
+        <source src="musica/spotifydown.com - Over the Rainbow_[cut_10sec].mp3" type="audio/mpeg">
+        Tu navegador no soporta el elemento de audio.
+    </audio>
+    
+    <script>
+        window.addEventListener('click', () => {
+            const backgroundMusic = document.getElementById("backgroundMusic");
+    
+            // Reproducir el audio cuando el usuario haga clic en cualquier parte de la página
+            backgroundMusic.play();
+        });
+    </script>
+
+
+    <script src="js/script1.js"></script>
+</body>
+</html>
